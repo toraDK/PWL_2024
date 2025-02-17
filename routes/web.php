@@ -32,3 +32,5 @@ Route::get('/articles/{id}', [PageController::class, 'articles']);
 Route::get('/user/{name?}', [AboutController::class, 'aboutme']);
 
 Route::resource('photos', PhotoController::class);
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
